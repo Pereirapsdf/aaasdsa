@@ -1,6 +1,65 @@
-<!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Bootstrap Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
-  
- .
+/* Normalización */
+@import url('reset.css');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+header .logo {
+    font-size: 1.5rem;
+}
+
+header .fecha {
+    font-size: 1rem;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+.noticias-principales, .noticias-secundarias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.noticias-principales .noticia {
+    flex: 1 1 100%; /* Para móviles, cada noticia ocupa 100% del espacio */
+    background: #f0f0f0;
+    padding: 15px;
+}
+
+.noticias-secundarias article {
+    background: #f0f0f0;
+    padding: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
